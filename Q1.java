@@ -10,9 +10,7 @@ public class Q1 {
 		char ch[]=input.toCharArray();
 		int flag=0;
 		for(int i=0;i<ch.length;i++) {
-			if((ch[i]=='G')||(ch[i]=='C')||(ch[i]=='T')||(ch[i]=='A')){
-			
-			
+
 			if (ch[i]=='G') {
 				
 				ch[i]='C';
@@ -25,14 +23,12 @@ public class Q1 {
 			}
 			else if (ch[i]=='A') {
 				ch[i]='U';
-				
-			}}
-			
+			}
 			else {
 			flag=1;	
-			break;}
+			break;}}
 			
-			}
+			
 		if(flag==0) {
 		for(int i=0;i<ch.length;i++) {
 			
