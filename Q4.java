@@ -26,7 +26,10 @@ public class Q4 {
 			break;
 			
 		case "february":	
-				DN = 31+d;
+				if(((y%4 == 0) && (y%100!= 0)) || (y%400 == 0)) {
+			             DN = 32+d;}
+                                else{
+				     DN = 31+d;}
 				break;	
 		case "march":	
 			   DN = 59+d;
@@ -62,9 +65,8 @@ public class Q4 {
 			break;
 		}
 		
-		if(((y%4 == 0) && (y%100!= 0)) || (y%400 == 0)) {
-			DN+=1;
-		}
+		
+		
 		System.out.println("Day Number: "+DN);	
 		}		
 		}
