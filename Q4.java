@@ -13,7 +13,7 @@ public class Q4 {
 		
 		while(s.hasMoreTokens()) {
 			 date = s.nextToken().replaceAll("st", "").replaceAll("nd", "").replaceAll("rd", "").replaceAll("th", "");
-			 month = s.nextToken();
+			 month = s.nextToken().toLowerCase();
 			 year = s.nextToken();	 
 		}
 		int d= Integer.parseInt(date);
@@ -21,41 +21,41 @@ public class Q4 {
 
 		switch(month) {
 		
-		case "January":
+		case "january":
 			DN = d;
 			break;
 			
-		case "February":	
+		case "february":	
 				DN = 31+d;
 				break;	
-		case "March":	
+		case "march":	
 			   DN = 59+d;
 			   break;
-		case "April":	   
+		case "april":	   
 				DN = 89+d;
 				break;
-		case "May":		
+		case "may":		
 				DN = 120+d;
 				break;
-		case "June":		
+		case "june":		
 			    DN = 150+d;
 			    break;
-		case "July":	    
+		case "july":	    
 				DN = 181+d;
 				break;
-		case "August":		
+		case "august":		
 				DN = 212+d;
 				break;
-		case "September":		
+		case "september":		
 				DN = 242+d;
 				break;
-		case "October":		
+		case "october":		
 				DN = 273+d;
 				break;
-		case "November":		
+		case "november":		
 				DN = 303+d;
 				break;
-		case "December":
+		case "december":
 			    DN = 334+d;
 			    break;
 		default:	    
