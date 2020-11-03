@@ -12,7 +12,7 @@ public class Q4 {
 		int DN=0;
 		
 		while(s.hasMoreTokens()) {
-			 date = s.nextToken();
+			 date = s.nextToken().replaceAll("st", "").replaceAll("nd", "").replaceAll("rd", "").replaceAll("th", "");
 			 month = s.nextToken();
 			 year = s.nextToken();	 
 		}
