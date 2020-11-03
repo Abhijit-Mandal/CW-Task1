@@ -5,11 +5,12 @@ public class Q2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);		
-		int random = (int) (Math.random()*3)+1;
+		
 		int cases=0;
 		int user=0;
 		int comp=0;
 		while(cases<3) {
+			int random = (int) (Math.random()*3)+1;
 			System.out.println("Select 'R' for Rock, 'P' for Paper and 'S' for Scissors: " );
 			char s = sc.next().charAt(0);
 		switch(random) {
